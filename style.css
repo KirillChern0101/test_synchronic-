@@ -1,0 +1,232 @@
+:root {
+  --black-collor: #000000;
+  --white-collor: #ffffff;
+  --body-collor: #f9faff;
+  --text-footer-collor: #52575c;
+}
+
+body {
+  background-color: var(--body-collor);
+}
+footer {
+  margin-top: 20px;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* indexHTML */
+.header-title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  color: var(--black-collor);
+  background-color: var(--body-collor);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.06), 0 0 2px 0 rgba(0, 0, 0, 0.06),
+    0 4px 8px 0 rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  background-color: var(--white-collor);
+  background-image: url(./images/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 600px;
+  max-height: 961px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 0;
+  overflow: hidden;
+}
+
+/* .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: inherit;
+  background-position: top;
+  background-repeat: repeat-x;
+  z-index: 1;
+  display: flex;
+}
+.hero::before {
+  display: flex;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background-image: url(./images/Background.jpg);
+  background-size: 40px 40px;
+} */
+
+.meassages__content {
+  max-width: 520px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.04),
+    0 16px 24px 0 rgba(0, 0, 0, 0.04), 0 24px 32px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 17px 17px 17px 17px;
+  background: linear-gradient(74.07deg, #00c6fb 0.9%, #005bea 99.41%);
+
+  padding: 18px 20px 52px 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meassages__content:not(:last-child) {
+  margin-bottom: 20px;
+}
+.meassages__content.last {
+  padding: 35px 20px;
+}
+.meassages__content .messages__aside__first {
+  max-width: 260px;
+
+  flex: 1;
+  margin-right: 10px;
+}
+.meassages__content .messages__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--white-collor);
+
+  margin-bottom: 12px;
+}
+
+.messages__item {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--white-collor);
+
+  margin-bottom: 12px;
+}
+
+.meassages__button {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+
+  color: var(--white-collor);
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  box-shadow: 0px 0px 1px 0px rgba(0, 56, 255, 0.08),
+    0px 2px 6px 0px rgba(0, 56, 255, 0.08),
+    0px 16px 24px 0px rgba(0, 56, 255, 0.1);
+
+  padding: 8px 57px;
+  max-width: 146px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.messages__aside__second {
+  max-width: 210px;
+  max-height: 210px;
+  margin: 0;
+
+  flex: 1;
+}
+
+.footer__link {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0;
+  color: var(--text-footer-collor);
+}
+.footer__add {
+  margin-bottom: 32px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: ;
+}
+.footer__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__item:hover .footer__link,
+.footer__item:focus-within .footer__link {
+  color: #00c6fb;
+}
+
+.footer__item:hover .footer-a-icons svg use,
+.footer__item:focus-within .footer-a-icons svg use {
+  fill: #00c6fb;
+}
+
+.footer__item:focus-within {
+  outline: 2px solid #00c6fb;
+}
+
+.footer__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0;
+  color: var(--text-footer-collor);
+
+  text-align: center;
+}
+
+.footer__text:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+.footer__text:nth-of-type(2) {
+  margin-bottom: 16px;
+}
