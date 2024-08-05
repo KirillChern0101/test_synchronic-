@@ -18,7 +18,7 @@ footer {
   text-decoration: none;
 }
 .container {
-  width: 600px;
+  width: 520px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -174,6 +174,28 @@ ul {
   flex: 1;
 }
 
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+.footer__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__item svg {
+  margin-right: 8px;
+  color: var(--text-footer-collor);
+}
+
 .footer__link {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -183,32 +205,33 @@ ul {
   letter-spacing: 0;
   color: var(--text-footer-collor);
 }
-.footer__add {
-  margin-bottom: 32px;
-}
-.footer__list {
-  display: flex;
-  justify-content: space-around;
-
-  margin-bottom: ;
-}
-.footer__item a {
-  text-decoration: none;
-  color: inherit;
-}
 
 .footer__item:hover .footer__link,
 .footer__item:focus-within .footer__link {
-  color: #00c6fb;
+  background: linear-gradient(74.07deg, #00c6fb 0.9%, #005bea 99.41%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .footer__item:hover .footer-a-icons svg use,
 .footer__item:focus-within .footer-a-icons svg use {
-  fill: #00c6fb;
+  fill: transparent;
+  background: linear-gradient(74.07deg, #00c6fb 0.9%, #005bea 99.41%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .footer__item:focus-within {
-  outline: 2px solid #00c6fb;
+  outline: 2px solid linear-gradient(74.07deg, #00c6fb 0.9%, #005bea 99.41%);
+}
+
+.footer-divider {
+  width: 520px;
+  margin-bottom: 16px;
+  height: 0px;
+  border: 1px solid var(--text-footer-collor);
+  opacity: 0.3;
 }
 
 .footer__text {
@@ -219,7 +242,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0;
   color: var(--text-footer-collor);
-
   text-align: center;
 }
 
