@@ -66,8 +66,6 @@
         text-transform: uppercase;
         color: var(--black-collor);
         background-color: var(--body-collor);
-        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.06), 0 0 2px 0 rgba(0, 0, 0, 0.06),
-          0 4px 8px 0 rgba(0, 0, 0, 0.06);
         text-align: center;
         padding: 20px 0;
         width: 100%;
@@ -97,21 +95,23 @@
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        box-sizing: border-box;
       }
-
       .meassages__content + .meassages__content {
         margin-top: 20px;
       }
-
-      .meassages__content.last {
+      .meassages__content.last__content {
         padding: 35px 20px;
+      }
+      .m__second {
+        padding-top: 12px;
       }
 
       .messages__aside__first {
-        flex: 1;
+        width: 260px;
         margin-right: 10px;
-        max-width: 50%;
+      }
+      .last__aside {
+        padding-top: 33px;
       }
 
       .messages__title {
@@ -149,8 +149,9 @@
       }
 
       .messages__aside__second {
-        flex: 1;
-        max-width: 50%;
+        width: 210px;
+        height: 210px;
+        max-width: 210px;
         max-height: 210px;
       }
 
@@ -183,6 +184,8 @@
         line-height: 1.14;
         letter-spacing: 0;
         color: var(--text-footer-collor);
+
+        margin-left: 8px;
       }
 
       .footer-divider {
@@ -254,11 +257,11 @@
               </p>
               <button type="button" class="meassages__button">Play</button>
             </div>
-            <div class="messages__aside__second">
+            <div class="messages__aside__second m__second">
               <img src="./images/Art_2.png" alt="Tablet" />
             </div>
           </div>
-          <div class="meassages__content last">
+          <div class="meassages__content last__content">
             <div class="messages__aside__first last__aside">
               <h2 class="messages__title">Claim your Bonuses</h2>
               <p class="messages__item">
