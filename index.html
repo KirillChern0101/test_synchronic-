@@ -4,11 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <link rel="stylesheet" href="./style.css" />
+    <style type="text/css">
+      :root {
+        --black-collor: #000000;
+        --white-collor: #ffffff;
+        --body-collor: #f9faff;
+        --text-footer-collor: #52575c;
+      }
+
+      body {
+        background-color: var(--body-collor);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Arial", sans-serif;
+      }
+      footer {
+        margin-top: 20px;
+      }
+      .list {
+        list-style: none;
+      }
+      .link {
+        text-decoration: none;
+      }
+      .container {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .container-header {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* HEADER */
+      .header-title {
+        font-weight: 700;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: var(--black-collor);
+        background-color: var(--body-collor);
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.06), 0 0 2px 0 rgba(0, 0, 0, 0.06),
+          0 4px 8px 0 rgba(0, 0, 0, 0.06);
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+      }
+
+      /* HEADER */
+
+      /* HERO */
+      .hero {
+        background-color: var(--white-collor);
+        background-image: url(./images/Background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 32px 0;
+        overflow: hidden;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .meassages__content {
+        max-width: 100%;
+        border-radius: 17px;
+        background: linear-gradient(74.07deg, #00c6fb 0.9%, #005bea 99.41%);
+        padding: 18px 20px 52px 18px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      .meassages__content + .meassages__content {
+        margin-top: 20px;
+      }
+
+      .meassages__content.last {
+        padding: 35px 20px;
+      }
+
+      .messages__aside__first {
+        flex: 1;
+        margin-right: 10px;
+        max-width: 50%;
+      }
+
+      .messages__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: 0;
+        color: var(--white-collor);
+        margin-bottom: 12px;
+      }
+
+      .messages__item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: 0;
+        color: var(--white-collor);
+        margin-bottom: 12px;
+      }
+
+      .meassages__button {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        color: var(--white-collor);
+        background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+        padding: 8px 57px;
+        max-width: 146px;
+        border-radius: 100px;
+        cursor: pointer;
+      }
+
+      .messages__aside__second {
+        flex: 1;
+        max-width: 50%;
+        max-height: 210px;
+      }
+
+      /* FOOTER */
+      .footer__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+      }
+
+      .footer__item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .footer__item svg {
+        vertical-align: middle;
+        color: var(--text-footer-collor);
+      }
+
+      .footer__item + .footer__item {
+        margin-left: 20px;
+      }
+
+      .footer__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0;
+        color: var(--text-footer-collor);
+      }
+
+      .footer-divider {
+        width: 100%;
+        max-width: 520px;
+        margin-bottom: 16px;
+        height: 0;
+        border: 1px solid var(--text-footer-collor);
+        opacity: 0.3;
+      }
+
+      .footer__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0;
+        color: var(--text-footer-collor);
+        text-align: center;
+      }
+
+      .footer__text--first {
+        margin-bottom: 10px;
+      }
+
+      .footer__text--second {
+        margin-bottom: 16px;
+      }
+      /* FOOTER */
+    </style>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header>
       <div class="container-header">
         <h1 class="header-title">Logo here</h1>
       </div>
@@ -51,7 +259,7 @@
             </div>
           </div>
           <div class="meassages__content last">
-            <div class="messages__aside__first">
+            <div class="messages__aside__first last__aside">
               <h2 class="messages__title">Claim your Bonuses</h2>
               <p class="messages__item">
                 Generous gifts are waiting for you in the form of no deposit
@@ -72,7 +280,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content__first">
-          <p class="footer__text">If you have questions, please contact us:</p>
+          <p class="footer__text footer__text--first">
+            If you have questions, please contact us:
+          </p>
           <address class="footer__add">
             <ul class="footer__list list">
               <li class="footer__item">
@@ -104,7 +314,7 @@
         </div>
         <hr class="footer-divider" />
         <div class="footer__content__second">
-          <p class="footer__text">
+          <p class="footer__text footer__text--second">
             Some games and bonuses may not be available in your country.
           </p>
           <p class="footer__text">
